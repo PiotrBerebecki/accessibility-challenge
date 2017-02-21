@@ -1,46 +1,71 @@
+<!DOCTYPE>
 <html>
+
 <head>
-My Messy Site
-<link href="style.css" />
+  <html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Messy Site</title>
+  <link rel="stylesheet" href="style.css" class="rel">
 </head>
+
 <body>
-<span>I Love Coding</span>
-<img src="./catonkeyboard.jpeg" />
-<div>
-<div>
-<span>First Section Header</span>
-</div>
-<span>Lorem ipsum dolor sit amet,
-consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</span>
-</div>
-<div>
-<div>
-<span>Second Section Header</span>
-</div>
-<span>Lorem ipsum dolor sit amet,
-consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div>
-<form action="/" method="post" tabindex="3">
-First Name
-<input type="text" tabindex="2"/>
-Last Name
-<input type="text" tabindex="1"/>
-Email
-<input type="email" tabindex="4"/>
-Password
-<input type="password" tabindex="5"/>
-<button type="submit" tabindex="6"/>
-Submit
-</button>
-</form>
-<div>"Lorem ipsum dolor sit amet,
-consectetur adipiscing elit."<span>by John Smith, 2017</span></div>
-<div>Copyright John 2015. All rights reserved</div>
+
+  <header role="banner">
+    <h1>I Love Coding</h1>
+    <img src="./catonkeyboard.jpeg" alt="cat lying on a keyboard"/>
+  </header>
+
+  <main role="main">
+
+    <article role="article">
+      <header>
+        <h2>First Section Header</h2>
+      </header>
+      <p>
+        Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </article>
+
+    <article role="article">
+      <header>
+        <h2>Second Section Header</h2>
+      </header>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+    </article>
+
+    <form role="form" action="/" method="post">
+
+      <label for="firstname" tabindex="1">First name</label>
+      <input type="text" name="firstname" placeholder="Enter first name" tabindex="1"/>
+
+      <label for="email" tabindex="2">Email</label>
+      <input type="email" name="email" placeholder="Enter email" tabindex="2"/>
+
+      <label for="password" tabindex="2">Password</label>
+      <input type="password" placeholder="Enter password" tabindex="3"/>
+
+      <button type="submit" tabindex="4"/>
+        Submit
+      </button>
+
+    </form>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>"Lorem ipsum dolor sit amet,consectetur adipiscing elit."</p>
+    <p>by John Smith, 2017</p>
+    <p>Copyright John 2015. All rights reserved</p>
+  </footer>
+
 </body>
+
 </html>
