@@ -43,16 +43,16 @@
 
     <form role="form" action="/" method="post">
 
-      <label for="firstname" tabindex="1">First name</label>
-      <input type="text" name="firstname" placeholder="Enter first name" tabindex="1"/>
+      <label for="firstname" tabindex="0">First name</label>
+      <input type="text" name="firstname" placeholder="Enter first name" tabindex="0"/>
 
-      <label for="email" tabindex="2">Email</label>
-      <input type="email" name="email" placeholder="Enter email" tabindex="2"/>
+      <label for="email" tabindex="0">Email</label>
+      <input type="email" name="email" placeholder="Enter email" tabindex="0"/>
 
-      <label for="password" tabindex="2">Password</label>
-      <input type="password" placeholder="Enter password" tabindex="3"/>
+      <label for="password" tabindex="0">Password</label>
+      <input type="password" placeholder="Enter password" tabindex="0"/>
 
-      <button type="submit" tabindex="4"/>
+      <button type="submit" tabindex="0"/>
         Submit
       </button>
 
@@ -61,9 +61,11 @@
   </main>
 
   <footer role="contentinfo">
-    <p>"Lorem ipsum dolor sit amet,consectetur adipiscing elit."</p>
-    <p>by John Smith, 2017</p>
-    <p>Copyright John 2015. All rights reserved</p>
+    <blockquote>
+      <cite>"Lorem ipsum dolor sit amet,consectetur adipiscing elit."</cite>
+      John Smith, 2017
+    </blockquote>
+    <div>Copyright John 2015. All rights reserved</div>
   </footer>
 
 </body>
